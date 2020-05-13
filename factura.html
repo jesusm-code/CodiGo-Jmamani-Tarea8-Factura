@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./factura.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="main__datos">
+            <div class="datos__caja">
+                <label for="" class="datos__nombre">Nombre:</label>
+                <input type="text" class="datos__input">
+            </div>
+            <div class="datos__caja">
+                <label for="" class="datos__nombre">Fecha:</label>
+                <input type="text" class="datos__input">
+            </div>
+            <div class="datos__caja">
+                <label for="" class="datos__nombre">RUC:</label>
+                <input type="text" class="datos__input">
+            </div>
+            <div class="datos__caja">
+                <label for="" class="datos__nombre">Nro:</label>
+                <input type="text" class="datos__input">
+            </div>            
+        </div>
+        </div>
+        <div class="main__detalle">
+            <div class="detalle__articulo">
+                <div class="detalle__caja">
+                    <label for="" class="detalle__label">Cantidad</label>
+                    <input type="number" class="detalle__input" id="InpCantidad">
+                </div>
+                <div class="detalle__caja2">
+                    <label for="" class="detalle__label">Descripcion</label>
+                    <input type="text" class="detalle__input" id="InpDescripcion">
+                </div>
+                <div class="detalle__caja">
+                    <label for="" class="detalle__label">P. Unitario</label>
+                    <input type="number" class="detalle__input" id="InpUnitario">
+                </div>
+                <div class="detalle__caja">
+                    <label for="" class="detalle__label">P. Total</label>
+                    <label for="" class="detalle__label2" id="InpTotal">LLL</label>
+                </div>
+            </div>
+            <div class="detalle__guardar">
+                <button class="detalle__btnGuardar" id="btnAgregar">Agregar</button>
+                
+            </div>
+        </div>
+        <div class="main__lista" id="listaElementos">
+            <div class="lista__titulo">
+                <label for="" class="lista_caja">Item</label>
+                <label for=""class="lista_caja2">Descripcion</label>
+                <label for=""class="lista_caja">P.Unitario</label>
+                <label for=""class="lista_caja">P.Total</label>
+            </div>
+            <div class="lista__detalle">
+                <span class="lista__item">Item</span>
+                <span class="lista__descripcion">Descripcion</span>
+                <span class="lista__unidad">P Unitario</span>
+                <span class="lista__total">P Total</span>
+            </div>
+            <div class="total__detalle" >
+                <div class="total"></div>
+                <span class="total__factura">P Total</span>
+            </div>
+        </div>
+        <div class="main_Resumen">
+            <div class="resumen__guardar">
+                <button class="resumen__btnGuardar" id="btnGuardar">Agregar</button>               
+            </div>
+            <div class="resumen_total"></div>
+        </div>
+
+    </main>
+
+    <script src="./factura.js"></script>
+</body>
+</html>
